@@ -1,10 +1,21 @@
-import todolist from '../store/todolist'
 import {
-  ITodo
-} from './todo'
+  TodoListStore
+} from '../store'
 
+/**
+ * mobx store 注释
+ */
+export interface ITodo {
+  id: number,
+  name: string,
+  finished: boolean
+}
+
+/**
+ * 组件 props 注释
+ */
 export interface IAppProp {
-  store: todolist
+  todoListStore?: TodoListStore
 }
 
 interface IBaseViewProp {

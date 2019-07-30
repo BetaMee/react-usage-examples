@@ -1,2 +1,1 @@
-export * from './todo'
-export * from './component'
+export * from './base'

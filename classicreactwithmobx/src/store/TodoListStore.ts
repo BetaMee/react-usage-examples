@@ -17,7 +17,7 @@ class Todo {
   }
 }
 
-class TodoList {
+class TodoListStore {
   @observable todos: Array<ITodo> = []
   @computed get finishedTodoCount() {
     return this.todos.filter(todo => todo.finished).length
@@ -45,4 +45,4 @@ class TodoList {
   }
 }
 
-export default TodoList
+export default TodoListStore
