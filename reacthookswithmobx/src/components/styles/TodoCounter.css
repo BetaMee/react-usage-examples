@@ -1,0 +1,7 @@
+.counter {
+  margin: 20px 0;
+  color: #333333;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

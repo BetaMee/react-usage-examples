@@ -6,9 +6,12 @@ import React,{
 import './styles/TodoAdd.css'
 
 import {
-  IAddProp,
-  IAddState
+  IAddProp
 } from '../interfaces'
+
+interface IAddState {
+  todoVal: string
+}
 
 class TodoAdd extends React.Component<IAddProp, IAddState> {
   state = {

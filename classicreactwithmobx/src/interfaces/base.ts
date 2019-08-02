@@ -39,7 +39,3 @@ export interface ICounterProp {
 export interface IAddProp {
   addNewTodo: (name: string) => void
 }
-
-export interface IAddState {
-  todoVal: string
-}
