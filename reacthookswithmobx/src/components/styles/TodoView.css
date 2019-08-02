@@ -11,13 +11,13 @@
   width: 20px;
   height: 20px;
   display: inline-block;
-  background-image: url('../assests/select.svg');
+  background-image: url('../assets/select.svg');
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
 }
 .select_done {
-  background-image: url('../assests/select2.svg');
+  background-image: url('../assets/select2.svg');
 }
 
 .text {
@@ -36,7 +36,7 @@
   width: 20px;
   height: 20px;
   display: inline-block;
-  background-image: url('../assests/delete.svg');
+  background-image: url('../assets/delete.svg');
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;

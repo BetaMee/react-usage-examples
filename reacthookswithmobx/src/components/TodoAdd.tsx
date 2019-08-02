@@ -11,10 +11,6 @@ import {
 } from 'mobx-react-lite'
 
 import {
-  IAddProp
-} from '../interfaces'
-
-import {
   useTodoStore
 } from '../store'
 
