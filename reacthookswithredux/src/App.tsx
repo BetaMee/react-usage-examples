@@ -8,6 +8,7 @@ import TodoCounter from './components/TodoCounter'
 const App: React.FC = () => {
   return (
     <div className="app">
+      <div className="app-title">React Hooks App ( redux )</div>
       <TodoAdd />
       <TodoViewList />
       <TodoCounter />
