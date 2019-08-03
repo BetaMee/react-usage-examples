@@ -1,29 +1,29 @@
-import React,{
-  KeyboardEvent,
+import React, {
+  useContext,
+  useState,
   FormEvent,
-  useState
+  KeyboardEvent
 } from 'react'
 
 import './styles/TodoAdd.css'
 
 import {
-  observer
-} from 'mobx-react-lite'
+  ContextStore
+} from '../store/store'
 
 import {
-  useTodoStore
-} from '../store'
+  ADD_TODO
+} from '../store/todo'
 
-// interface IAddState {
-//   todoVal: string
-// }
+const TodoAdd: React.FC = () => {
+  const {
+    dispatch
+  } = useContext(ContextStore)
 
-const TodoAdd: React.FC = observer(() => {
   const [todoVal, setTodoVal] = useState('')
-  const todoStore = useTodoStore()
 
   function handleEnterChange(evt: FormEvent<HTMLInputElement>) {
-      setTodoVal(evt.currentTarget.value)
+    setTodoVal(evt.currentTarget.value)
   }
   function handleEnterInput(evt: KeyboardEvent<HTMLInputElement>) {
     // 判断非空
@@ -32,7 +32,10 @@ const TodoAdd: React.FC = observer(() => {
     }
     if (evt.keyCode === 13) {
       // 添加数据
-      todoStore.addNewTodo(todoVal)
+      dispatch({
+        type: ADD_TODO,
+        name: todoVal
+      })
       // 清理输入框
       setTodoVal('')
     }
@@ -49,6 +52,6 @@ const TodoAdd: React.FC = observer(() => {
       />
     </div>
   )
-})
+}
 
 export default TodoAdd

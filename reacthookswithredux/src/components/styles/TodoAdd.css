@@ -1,0 +1,14 @@
+.add {
+  width: 100%;
+  outline: none;
+  height: 45px;
+  font-size: 20px;
+  padding: 0 5px;
+  color: #A2A9AF;
+  border: unset;
+  border-radius: 4px;
+}
+
+.add::-webkit-input-placeholder {
+  color: #DDDFE6;
+}

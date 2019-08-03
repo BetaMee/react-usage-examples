@@ -26,6 +26,6 @@ export interface IViewProp extends IBaseViewProp {
 //   totalCount: number
 // }
 
-export interface IAddProp {
-  addNewTodo: (name: string) => void
-}
+// export interface IAddProp {
+//   addNewTodo: (name: string) => void
+// }
